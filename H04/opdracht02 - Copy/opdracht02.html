@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 {
+            color: red;
+            font-size: large;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        .default{
+            color: gray;
+        }
+        .form-group{
+            size: 1000px;
+        }
+    </style>
+</head>
+<body class="container">
+    <h1>Choose an animal from this list:</h1>
+    <form action="resultaat02.php" method="get">
+        <div class="form-group">
+            <select class="form-control" name="animalnames[]" id="animalnames">
+                <option value="cat">cat</option>
+                <option value="dog">dog</option>
+                <option value="bird">bird</option>
+                <option value="aardvark">aardvark</option>
+            </select>
+        </div>
+        <button class="btn btn-primary">OK!</button>
+    </form>
+</body>
+</html>
